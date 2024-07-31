@@ -180,6 +180,27 @@ const describePopulation = (country, population) =>
     population
   )}% of the world`;
 
-console.log(describePopulation('China', 1441));
-console.log(describePopulation('USA', 332));
-console.log(describePopulation('Portugal', 10));
+// console.log(describePopulation('China', 1441));
+// console.log(describePopulation('USA', 332));
+// console.log(describePopulation('Portugal', 10));
+
+const populations = [10, 1441, 332, 169];
+// console.log(populations.length === 4);
+const percentages = [
+  percentageOfWorld3(populations[0]),
+  percentageOfWorld3(populations[1]),
+  percentageOfWorld3(populations[2]),
+  percentageOfWorld3(populations[populations.length - 1]),
+];
+
+// console.log(percentages);
+
+const neighbours = ['Turkey', 'Georgia', 'Russia', 'Iran'];
+neighbours.push('Utopia');
+neighbours.pop();
+if (!neighbours.includes('Germany')) {
+  console.log('Probably not a central european country :D');
+}
+
+neighbours[neighbours.indexOf('Iran')] = 'Dreamland';
+console.log(neighbours);
