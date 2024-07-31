@@ -166,3 +166,20 @@ const ukPopulation = percentageOfWorld2(66.97);
 // console.log(indiaPopulation);
 // console.log(bangladeshPopulation);
 // console.log(ukPopulation);
+
+const percentageOfWorld3 = population =>
+  Math.round((population / 7900) * 1000) / 10;
+const percPortugal3 = percentageOfWorld3(10);
+const percChina3 = percentageOfWorld3(1441);
+const percUSA3 = percentageOfWorld3(332);
+
+// console.log(percPortugal3, percChina3, percUSA3);
+
+const describePopulation = (country, population) =>
+  `${country} has ${population} million people, which is about ${percentageOfWorld3(
+    population
+  )}% of the world`;
+
+console.log(describePopulation('China', 1441));
+console.log(describePopulation('USA', 332));
+console.log(describePopulation('Portugal', 10));
