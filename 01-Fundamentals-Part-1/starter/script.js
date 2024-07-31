@@ -173,7 +173,7 @@ if (shouldDrive) {
   console.log('Someone else shoul drive');
 }
 */
-
+/*
 const day = 'thursday';
 
 switch (day) {
@@ -213,3 +213,17 @@ if (day === 'monday') {
 } else {
   console.log('Not a valid day');
 }
+*/
+
+const age = 2;
+// age >= 18 ? console.log('I like to drink') : console.log('I like to sleep');
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'wine';
+} else {
+  drink2 = 'water';
+}
+// console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);

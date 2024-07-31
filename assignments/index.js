@@ -96,7 +96,7 @@ if (language === 'English' && population < 50 && !isIsland) {
 */
 
 // The switch Statement
-
+/*
 switch (language) {
   case 'chinese':
   case 'mandarin':
@@ -117,3 +117,10 @@ switch (language) {
   default:
     console.log('Great language too :D');
 }
+*/
+
+console.log(
+  `${country}'s population is ${
+    population > averagePopulation ? 'above' : 'below'
+  } average`
+);
