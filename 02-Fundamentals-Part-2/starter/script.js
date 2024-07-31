@@ -246,7 +246,51 @@ console.log(gunel.summary);
 // console.log(gunel.calcAge(1999));
 // console.log(gunel['calcAge'](1999));
 */
-
+/*
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weight repetition ${rep} 🏋️‍♀️`);
+}*/
+/*
+const gunelArray = [
+  'Gunel',
+  'Isgandarova',
+  2024 - 1999,
+  'full-stack developer',
+  ['Dmitry', 'Zohra', 'Nargiz'],
+];
+
+const types = [];
+
+for (let i = 0; i < gunelArray.length; i++) {
+  // console.log(gunelArray[i], typeof gunelArray[i]);
+  // types[i] = typeof gunelArray[i];
+  types.push(typeof gunelArray[i]);
 }
+
+// console.log(types);
+
+const years = [1991, 1999, 2002, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2024 - years[i]);
+}
+
+// console.log(ages);
+// for (let i = 0; i < gunelArray.length; i++) {
+//   if (typeof gunelArray[i] !== 'string') continue;
+//   console.log(gunelArray[i], typeof gunelArray[i]);
+// }
+
+for (let i = 0; i < gunelArray.length; i++) {
+  if (typeof gunelArray[i] === 'number') break;
+  console.log(gunelArray[i], typeof gunelArray[i]);
+} */
+
+const gunelArray = [
+  'Gunel',
+  'Isgandarova',
+  2024 - 1999,
+  'full-stack developer',
+  ['Dmitry', 'Zohra', 'Nargiz'],
+];

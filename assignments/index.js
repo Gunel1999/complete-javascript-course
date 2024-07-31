@@ -229,7 +229,7 @@ const myCountry = {
 myCountry.population += 2;
 myCountry['population'] -= 2;
 
-myCountry.describe();
+// myCountry.describe();
 myCountry.checkIsland();
 // console.log(
 //   `${myCountry.country} has ${myCountry.population} million ${
@@ -238,3 +238,14 @@ myCountry.checkIsland();
 //     myCountry.neighbours.length ? myCountry.neighbours.length : 'no'
 //   } neighbouring countries and a capital called ${myCountry.capital}`
 // );
+
+// for (let i = 1; i <= 50; i++) {
+//   console.log(`Voter number ${i} is currently voting`);
+// }
+
+const percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld3(populations[i]));
+}
+
+console.log(percentages2);
