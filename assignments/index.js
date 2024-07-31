@@ -1,3 +1,4 @@
+/*
 const country = 'Azerbaijan';
 const continent = 'Eurasia';
 let population = 10.14;
@@ -6,7 +7,7 @@ console.log(country);
 console.log(continent);
 console.log(population);
 */
-
+/*
 // Data Types
 const isIsland = false;
 let language;
@@ -16,7 +17,7 @@ console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
 */
-
+/*
 //let, const and var
 language = 'Azerbaijani';
 // isIsland = true;
@@ -118,9 +119,50 @@ switch (language) {
     console.log('Great language too :D');
 }
 */
-
+/*
 console.log(
   `${country}'s population is ${
     population > averagePopulation ? 'above' : 'below'
   } average`
 );
+*/
+
+// 02-Fundamentals
+// Functions
+'use strict';
+
+function describeCountry(country, population, capitalCity) {
+  return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+}
+
+const russia = describeCountry('Russia', 144.2, 'Moscow');
+const italy = describeCountry('Italy', 58.94, 'Rome');
+const uk = describeCountry('United Kingdom', 66.97, 'London');
+
+// console.log(russia);
+// console.log(italy);
+// console.log(uk);
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const russiaPercentage = percentageOfWorld1(114.2);
+const italyPercentage = percentageOfWorld1(58.94);
+const chinaPercentage = percentageOfWorld1(1441);
+
+// console.log(russiaPercentage);
+// console.log(italyPercentage);
+// console.log(chinaPercentage);
+
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
+
+const indiaPopulation = percentageOfWorld2(1417);
+const bangladeshPopulation = percentageOfWorld2(169);
+const ukPopulation = percentageOfWorld2(66.97);
+
+// console.log(indiaPopulation);
+// console.log(bangladeshPopulation);
+// console.log(ukPopulation);
