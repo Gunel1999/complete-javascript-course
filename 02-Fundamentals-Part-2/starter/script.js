@@ -149,7 +149,7 @@ const ages = [
 ];
 console.log(ages);
 */
-
+/*
 const friends = ['Michael', 'Steven', 'Peter'];
 //add elements
 const newLength = friends.push('Jay');
@@ -172,4 +172,81 @@ console.log(friends.includes(23));
 
 if (friends.includes('Peter')) {
   console.log('You have a Peter');
+}
+*/
+/*
+const gunel = {
+  firstName: 'Gunel',
+  lastName: 'Isgandarova',
+  age: 2024 - 1999,
+  job: 'full-stack developer',
+  friends: ['Dmitry', 'Zokhra', 'Nargiz'],
+};
+
+// console.log(gunel.lastName);
+// console.log(gunel['lastName']);
+
+const nameKey = 'Name';
+// console.log(gunel['first' + nameKey]);
+// console.log(gunel['last' + nameKey]);
+
+const prompt1 = 'job';
+
+// console.log(gunel[prompt1]);
+
+if (gunel[prompt1]) {
+  console.log(gunel[prompt1]);
+} else {
+  console.log('Wrong request');
+}
+
+gunel.location = 'Los Angeles';
+gunel.gender = 'female';
+
+//Challenge
+console.log(
+  `${gunel.firstName} has ${gunel.friends.length} friends, and ${
+    gunel.gender === 'female' ? 'her' : 'his'
+  } best friend is called ${gunel.friends[0]}`
+);
+*/
+/*
+const gunel = {
+  firstName: 'Gunel',
+  lastName: 'Isgandarova',
+  birthYear: 1999,
+  job: 'full-stack developer',
+  friends: ['Dmitry', 'Zohra', 'Nargiz'],
+  hasDriversLicense: false,
+  gender: 'female',
+  //   calcAge: function (birthYear) {
+  //     return 2024 - birthYear;
+  //   },
+  //   calcAge: function () {
+  //     // console.log(this);
+  //     return 2024 - this.birthYear;
+  //   },
+  calcAge: function () {
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    this.summary = `${this.firstName} is a ${this.calcAge()}-years old ${
+      this.job
+    }, and ${this.gender === 'female' ? 'she' : 'he'} has ${
+      this.hasDriversLicense ? 'a' : 'no'
+    } driver's license`;
+    return this.summary;
+  },
+};
+
+gunel.getSummary();
+console.log(gunel.summary);
+
+// console.log(gunel.calcAge(1999));
+// console.log(gunel['calcAge'](1999));
+*/
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weight repetition ${rep} 🏋️‍♀️`);
 }

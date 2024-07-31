@@ -198,9 +198,43 @@ const percentages = [
 const neighbours = ['Turkey', 'Georgia', 'Russia', 'Iran'];
 neighbours.push('Utopia');
 neighbours.pop();
-if (!neighbours.includes('Germany')) {
-  console.log('Probably not a central european country :D');
-}
+// if (!neighbours.includes('Germany')) {
+//   console.log('Probably not a central european country :D');
+// }
 
-neighbours[neighbours.indexOf('Iran')] = 'Dreamland';
-console.log(neighbours);
+// neighbours[neighbours.indexOf('Iran')] = 'Dreamland';
+// console.log(neighbours);
+
+const myCountry = {
+  country: 'Azerbaijan',
+  capital: 'Baku',
+  language: 'azerbaijani',
+  population: 10.14,
+  neighbours: ['Turkey', 'Georgia', 'Russia', 'Iran'],
+  describe: function () {
+    console.log(
+      `${this.country} has ${this.population} million ${
+        this.language
+      }-speaking people, ${
+        this.neighbours.length ? this.neighbours.length : 'no'
+      } neighbouring countries and a capital called ${this.capital}`
+    );
+  },
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length === 0 ? true : false;
+    return this.isIsland;
+  },
+};
+
+myCountry.population += 2;
+myCountry['population'] -= 2;
+
+myCountry.describe();
+myCountry.checkIsland();
+// console.log(
+//   `${myCountry.country} has ${myCountry.population} million ${
+//     myCountry.language
+//   }-speaking people, ${
+//     myCountry.neighbours.length ? myCountry.neighbours.length : 'no'
+//   } neighbouring countries and a capital called ${myCountry.capital}`
+// );
