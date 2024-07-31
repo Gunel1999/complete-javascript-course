@@ -248,4 +248,15 @@ for (let i = 0; i < populations.length; i++) {
   percentages2.push(percentageOfWorld3(populations[i]));
 }
 
-console.log(percentages2);
+// console.log(percentages2);
+const listOfNeighbours = [
+  ['Canada', 'Mexico'],
+  ['Spain'],
+  ['Norway', 'Sweden', 'Russia'],
+];
+
+for (let o = 0; o < listOfNeighbours.length; o++) {
+  for (let i = 0; i < listOfNeighbours[o].length; i++) {
+    console.log(listOfNeighbours[o][i]);
+  }
+}

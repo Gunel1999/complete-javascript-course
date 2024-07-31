@@ -286,7 +286,7 @@ for (let i = 0; i < gunelArray.length; i++) {
   if (typeof gunelArray[i] === 'number') break;
   console.log(gunelArray[i], typeof gunelArray[i]);
 } */
-
+/*
 const gunelArray = [
   'Gunel',
   'Isgandarova',
@@ -294,3 +294,23 @@ const gunelArray = [
   'full-stack developer',
   ['Dmitry', 'Zohra', 'Nargiz'],
 ];
+
+// for (let i = gunelArray.length - 1; i >= 0; i--) {
+//   console.log(gunelArray[i]);
+// }
+
+for (let ex = 1; ex <= 3; ex++) {
+  console.log(`Starting exercise ${ex}`);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${ex}.Lifting weight repetition ${rep}`);
+  }
+}
+*/
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log('Loop is about to end...');
+}
